@@ -1,0 +1,82 @@
+@media screen and (max-width : 775px) {
+    
+    body{
+        max-width: 775px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    header {
+        max-width: 335px;
+        height: 47px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .logo {
+        max-width: 145px;
+        height: 47px;
+        margin-right: 50px;
+    }
+
+    .link a {
+        font-size: 12px;
+        font-style: normal;
+        text-transform: uppercase;
+        line-height: 17px;
+    }
+
+    .link {
+        position: inherit;
+        max-width: 140px;
+        height: 17px;
+    }
+
+    .accueil {
+        max-width: 59px;
+        height: 17px;
+        text-decoration: underline;
+    }
+
+    .a-propos {
+        max-width: 71px;
+        height: 17px;
+        margin-left: 10px;
+    }
+
+    .error-number {
+        margin-top: 198px;
+    }
+
+    .error-number h1 {
+        width: 198px;
+        height: 99px;
+        font-size: 96px;
+        margin: 0 89px 0 88px;
+        line-height: 137px;
+    }
+
+    .error-number p {
+        width: 260px;
+        height: 52px;
+        font-size: 18px;
+        margin-top: 11px;
+        margin-bottom: 0;
+        line-height: 26px;
+    }
+
+    br{
+        display: inline;
+    }
+
+    .error-number a {
+        width: 221px;
+        height: 20px;
+        margin-top: 133px;
+        margin-bottom: 235px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}

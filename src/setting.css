@@ -1,0 +1,11 @@
+body{
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    font-family: 'Montserrat',sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+a{
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
