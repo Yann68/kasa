@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.number {
+    margin: 0;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 411px;
+    color: #FF6060;
+}
+
+.text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+    color: #FF6060;
+}
+
+.link {
+    margin-top: 182px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FF6060;
+}

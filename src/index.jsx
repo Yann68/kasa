@@ -14,8 +14,8 @@ root.render(
     <BrowserRouter>
     <Header />
       <Routes>
-        <Route path="/accueil" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
         {/* renvoie une page 404 si page non trouvée */}
         <Route path="*" element={<Error />} />
       </Routes>

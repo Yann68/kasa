@@ -5,7 +5,7 @@ import styles from './index.module.css'
 function Header() {
   return (
     <header className={styles.header}>
-      <Link to="/accueil">
+      <Link to="/">
         <img src={LOGO} alt="logo Kasa" className={styles.logo} />
       </Link>
       <div className={styles.containerLink}>
@@ -14,7 +14,7 @@ function Header() {
             return { textDecoration: isActive ? 'underline' : 'none' }
           }}
           className={styles.link}
-          to="/accueil"
+          to ="/"
         >
           Accueil
         </NavLink>
@@ -23,7 +23,7 @@ function Header() {
             return { textDecoration: isActive ? 'underline' : 'none' }
           }}
           className={styles.link}
-          to="/about"
+          to ="/about"
         >
           A propos
         </NavLink>

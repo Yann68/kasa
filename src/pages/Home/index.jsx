@@ -16,11 +16,9 @@ function Home() {
         <div className={styles.backgroundFiltre}></div>
       </div>
       <main className={styles.main}>
-        {/* <div className={styles.container}> */}
-          {gallery.map((location, id) => (
-            <Card key={id} location={location} />
-          ))}
-        {/* </div> */}
+        {gallery.map((location, id) => (
+          <Card key={id} location={location} />
+        ))}
       </main>
     </section>
   )

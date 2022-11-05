@@ -12,12 +12,6 @@
     flex-wrap: wrap;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 .backgroundImage{
     position: relative;
     display: flex;
