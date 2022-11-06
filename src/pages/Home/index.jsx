@@ -1,6 +1,6 @@
 import styles from './index.module.css'
 import { useEffect, useState } from 'react'
-import housing from '../../housing.json'
+import housing from '../../array/housing.json'
 import Card from '../../components/Card'
 
 function Home() {

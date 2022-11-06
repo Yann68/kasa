@@ -1,5 +1,5 @@
 .container{
-    margin: 0 180px;
+    padding: 0 10%;
 }
 
 .infos {
@@ -10,12 +10,13 @@
     border-radius: 5px;
     height: 50px;
     background-color: #FF6060;
+    margin-top: 33px;
 }
 
 .collapse{
     margin-top: -1px;
-    margin-bottom: 0;
-    padding: 30px 15px 10px 18px;
+    margin-bottom: 33px;
+    padding: 25px 27px 10px 18px;
     text-align: left;
     background: #F7F7F7;
     border-radius:0 0 5px 5px;
@@ -29,4 +30,12 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 34px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    scale: 1.1;
 }
