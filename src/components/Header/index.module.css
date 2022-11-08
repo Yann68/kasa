@@ -7,14 +7,13 @@
   flex-wrap: wrap;
 }
 
-
 .logo {
   width: 210px;
   height: 68px;
 }
 
+
 .link {
-  position: relative;
   color: rgba(255, 96, 96, 1);
   font-size: 24px;
   font-weight: 500;
@@ -23,7 +22,7 @@
   margin-left: 57px;
 }
 
-.containerLink {
+.container {
     margin: 0;
 }
 

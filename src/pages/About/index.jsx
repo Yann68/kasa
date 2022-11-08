@@ -1,7 +1,8 @@
 import styles from '../About/index.module.css'
 import { useEffect, useState } from 'react'
 import ComponentCollapse from '../../components/Collapse'
-import info from '../../array/about.json'
+import info from '../../list/listInfo.json'
+import Banner from '../../components/Banner'
 
 function About() {
   const [test, setTest] = useState([])
@@ -10,14 +11,13 @@ function About() {
   }, [])
 
   return (
-    <section className={styles.section}>
-      <div className={styles.backgroundImage}>
-        <div className={styles.backgroundFiltre}></div>
-      </div>
-      {test.map((info, name) => (
-        <ComponentCollapse key={name} info={info} />
+    <main className={styles.main}>
+      <Banner />
+      {test.map((props, name) => (
+        <ComponentCollapse key={name} props={props}/>
+        
       ))}
-    </section>
+    </main>
   )
 }
 export default About

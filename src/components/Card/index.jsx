@@ -1,13 +1,21 @@
-import styles from "./index.module.css"
-import {Link} from "react-router-dom"
 
-function Card({location}) {
-    return (
-        <div className={styles.card}>
-        <Link to="/logement/:id">
-       <h3 className={styles.title}>{location.title}</h3>
-       <img src={location.cover} alt={location.title} className={styles.image} />
-       </Link>
+import { useNavigate } from 'react-router-dom'
+import styles from './index.module.css'
+
+
+function Card ({propsCard}) {
+
+const navigate = useNavigate()
+
+function handleClick() {
+  navigate(`/logement/${propsCard.id}`)
+}
+
+  return (
+    <div onClick={handleClick} className={styles.card}>
+      <img className={styles.image} src={propsCard.cover} alt="logement" />
+      <p className={styles.titleCard}>{propsCard.title}</p>
     </div>
-)}
-export default Card;
+  )
+}
+export default Card

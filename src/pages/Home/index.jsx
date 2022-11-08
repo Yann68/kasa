@@ -1,26 +1,25 @@
 import styles from './index.module.css'
 import { useEffect, useState } from 'react'
-import housing from '../../array/housing.json'
+import housing from '../../list/listHousing.json'
 import Card from '../../components/Card'
+import Banner from '../../components/Banner'
 
 function Home() {
-  const [gallery, setGallery] = useState([])
+  
+  const [list, setList] = useState([])
   useEffect(() => {
-    setGallery(housing)
+    setList(housing)
   }, [])
 
   return (
-    <section className={styles.section}>
-      <div className={styles.backgroundImage}>
-        <h1 className={styles.title}>Chez vous, partout et ailleurs</h1>
-        <div className={styles.backgroundFiltre}></div>
-      </div>
-      <main className={styles.main}>
-        {gallery.map((location, id) => (
-          <Card key={id} location={location} />
+    <main className={styles.main}>
+      <Banner  />
+      <section className={styles.section}>
+        {list.map((props, id) => (
+          <Card key={id} propsCard={props} />
         ))}
-      </main>
-    </section>
+      </section>
+    </main>
   )
 }
 export default Home

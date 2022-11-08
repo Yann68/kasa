@@ -8,26 +8,28 @@ function Header() {
       <Link to="/">
         <img src={LOGO} alt="logo Kasa" className={styles.logo} />
       </Link>
-      <div className={styles.containerLink}>
+
+      <nav className={styles.container}>
         <NavLink
-          style={({ isActive }) => {
+          className={styles.link}
+          to="/"
+          style={({isActive}) => {
             return { textDecoration: isActive ? 'underline' : 'none' }
           }}
-          className={styles.link}
-          to ="/"
         >
           Accueil
         </NavLink>
+
         <NavLink
+          to="/about"
+          className={styles.link}
           style={({ isActive }) => {
             return { textDecoration: isActive ? 'underline' : 'none' }
           }}
-          className={styles.link}
-          to ="/about"
         >
           A propos
         </NavLink>
-      </div>
+      </nav>
     </header>
   )
 }
