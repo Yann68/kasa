@@ -14,9 +14,8 @@ function About() {
     <main className={styles.main}>
       <Banner />
       {test.map((props, name) => (
-        <ComponentCollapse key={name} props={props}/>
-        
-      ))}
+        <ComponentCollapse key={name} propsInfo={props}/>
+))}
     </main>
   )
 }

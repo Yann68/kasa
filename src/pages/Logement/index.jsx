@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import TagName from '../../components/TagName'
 import listHousing from '../../list/listHousing.json'
+ 
 
-function Logement() {
+function Logement(propsName) {
   const { id } = useParams()
   const [list, setList] = useState([id])
   useEffect(() => {
@@ -14,10 +16,9 @@ function Logement() {
       {list
         .filter((e) => e.id === id)
         .map((test, id) => (
-          <div key={id}>
+          <TagName key={id} props={propsName}>
             <p style={{ color: 'red' }}>{test.location}</p>
-            <img src={test.host.picture} alt="profil" />
-          </div>
+          </TagName>
         ))}
     </div>
   )

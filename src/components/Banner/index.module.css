@@ -6,8 +6,8 @@
     text-align: center;
     height: 223px;
     border-radius: 25px;
-    background-image: url("../../assets/IMG.jpg"),
-                      url("../../assets/img_about.jpg");
+    /* background-image: url("../../assets/IMG.jpg"), */
+                      /* url("../../assets/img_about.jpg"); */
     background-position: center;
     background-size: cover;
     margin-bottom: 43px;

@@ -3,33 +3,40 @@
 }
 
 .infos {
+    margin-bottom: 30px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     border-radius: 5px;
-    height: 50px;
     background-color: #FF6060;
-    margin-top: 33px;
-}
-
-.collapse{
-    margin-top: -1px;
-    margin-bottom: 33px;
-    padding: 25px 27px 10px 18px;
-    text-align: left;
-    background: #F7F7F7;
-    border-radius:0 0 5px 5px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 34px ;
-    color: #FF6060;
+    
 }
 
 .title {
     font-weight: 500;
     font-size: 24px;
     line-height: 34px;
+}
+
+.collapse{
+    height: 0;
+    overflow: hidden;
+    background: #F7F7F7;
+    border-radius:0 0 5px 5px;
+    margin-bottom: 30px;
+    margin-top: -30px;
+    transition: 4s ease;
+}
+
+.collapse p {
+    text-align: left;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px ;
+    color: #FF6060;
 }
 
 .button {

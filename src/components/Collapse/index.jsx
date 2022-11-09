@@ -1,29 +1,29 @@
+// Importation du style, des logos et des hooks
 import styles from './index.module.css'
 import { useState } from 'react'
-import { Collapse } from 'react-collapse'
 import close from '../../assets/close.png'
 import open from '../../assets/open.png'
 
-function ComponentCollapse({props}) {
+// Fonction du collapse
+function ComponentCollapse({ propsInfo }) {
+  // Variable pour indiqué l'etat par default
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div className={styles.container}>
       <div className={styles.infos}>
-        <p className={styles.title}>{props.name}</p>
+        <h1 className={styles.title}>{propsInfo.name}</h1>
         <img
-          className={styles.button}
           onClick={() => {
             setIsOpen(!isOpen)
           }}
           src={!isOpen ? open : close}
+          className={styles.button}
           alt="bouton pour fermé ou ouvrir l'info"
         />
       </div>
-      <Collapse isOpened={isOpen}>
-        <p className={styles.collapse}>
-          {props.info}
-        </p>
-      </Collapse>
+      <div className={styles.collapse}>
+        <p>{propsInfo.info}</p>
+      </div>
     </div>
   )
 }
