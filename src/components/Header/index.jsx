@@ -10,23 +10,11 @@ function Header() {
       </Link>
 
       <nav className={styles.container}>
-        <NavLink
-          className={styles.link}
-          to="/"
-          style={({isActive}) => {
-            return { textDecoration: isActive ? 'underline' : 'none' }
-          }}
-        >
+        <NavLink className={styles.link} to="/">
           Accueil
         </NavLink>
 
-        <NavLink
-          to="/about"
-          className={styles.link}
-          style={({ isActive }) => {
-            return { textDecoration: isActive ? 'underline' : 'none' }
-          }}
-        >
+        <NavLink to="/about" className={styles.link}>
           A propos
         </NavLink>
       </nav>

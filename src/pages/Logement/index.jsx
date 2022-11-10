@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import TagName from '../../components/TagName'
 import listHousing from '../../list/listHousing.json'
- 
+import styles from './index.module.css'
 
-function Logement(propsName) {
+function Logement() {
   const { id } = useParams()
-  const [list, setList] = useState([id])
+  const [list, setList] = useState([])
+
   useEffect(() => {
     setList(listHousing)
   }, [])
@@ -15,13 +15,15 @@ function Logement(propsName) {
     <div>
       {list
         .filter((e) => e.id === id)
-        .map((test, id) => (
-          <TagName key={id} props={propsName}>
-            <p style={{ color: 'red' }}>{test.location}</p>
-          </TagName>
+        .map((props, id) => (
+          <main key={id} className={styles.main}>
+      <div className={styles.carroussel}>
+      </div>
+<p className={styles.containerName}>{props.host.name}</p>
+          
+          </main>
         ))}
     </div>
   )
 }
-
 export default Logement

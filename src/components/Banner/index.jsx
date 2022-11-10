@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom'
 // Fonction de la bannière
 function Banner() {
   // variable pour récuréré l'URL actuelle
-  const test = useLocation()
+  const location = useLocation()
   return (
     <div
       // Opération ternaire pour affiché l'image de fond correspondante a l'URL
@@ -15,10 +15,10 @@ function Banner() {
       className={styles.backgroundImage}
       style={{
         backgroundImage:
-          test.pathname === '/' ? `url(${imageHome})` : `url(${imageAbout})`,
+          location.pathname === '/' ? `url(${imageHome})` : `url(${imageAbout})`,
       }}
     >
-      {test.pathname === '/' ? (
+      {location.pathname === '/' ? (
         <h1 className={styles.title}>Chez vous, partout et ailleurs</h1>
       ) : null}
 
