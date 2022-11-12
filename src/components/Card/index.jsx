@@ -6,13 +6,14 @@ import styles from './index.module.css'
 function Card({ props }) {
   // Variable et fonction pour navigué vers une route définie
   const navigate = useNavigate()
-  function handleClick() {
-    navigate(`/logement/${props.id}`)
-  }
-  // Utilisation de la fonction handleClick sur la carte
   return (
-    <div onClick={handleClick} className={styles.card}>
-      <img className={styles.image} src={props.cover} alt="logement" />
+    <div
+      onClick={() => {
+        navigate(`/logement/${props.id}`)
+      }}
+      className={styles.card}
+    >
+      <img className={styles.image} src={props.cover} alt="carte du logement" />
       <p className={styles.titleCard}>{props.title}</p>
     </div>
   )

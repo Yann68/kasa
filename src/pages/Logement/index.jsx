@@ -42,7 +42,7 @@ function Logement() {
               <Tag
                 content={
                   <ul>
-                    {props.tags.map((tag) => (
+                    {props.tags.map((tag, id) => (
                       <li key={id} className={styles.tag}>
                         {tag}
                       </li>
@@ -62,8 +62,8 @@ function Logement() {
                 <ComponentCollapse
                   title="Equipements"
                   content={
-                    <ul>
-                      {props.equipments.map((equipment) => (
+                    <ul className={styles.listEquipment}>
+                      {props.equipments.map((equipment, id) => (
                         <li key={id}>{equipment}</li>
                       ))}
                     </ul>

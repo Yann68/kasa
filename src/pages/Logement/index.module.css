@@ -8,12 +8,15 @@ main{
 
 .collapse {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 ul{
     padding: 0;
+}
+
+.listEquipment{
+    margin: 0;
 }
 
 li{

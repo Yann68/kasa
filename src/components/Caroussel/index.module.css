@@ -1,10 +1,11 @@
-
 .caroussel{
+    position: relative;
     border-radius: 25px;
     height: 415px;
 }
 
 .carousselImg {
+    position: relative;
     border-radius: 25px;
     width: 100%;
     height: 100%;
@@ -15,6 +16,23 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.carousselImg p {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    bottom: 0;
+    left: 50%;
+}
+
+.load{
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
    
 .button{
 width: 47px;
@@ -22,3 +40,9 @@ height: 79px;
 cursor: pointer;
 margin: 23px;
 }
+
+.button:active{
+    scale: 0.8;
+}
+
+
