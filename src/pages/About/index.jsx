@@ -1,21 +1,23 @@
 import styles from '../About/index.module.css'
 import { useEffect, useState } from 'react'
 import ComponentCollapse from '../../components/Collapse'
-import listInfo from '../../list/listInfo.json'
+import info from '../../models/info.json'
 import Banner from '../../components/Banner'
 
 function About() {
-  const [list, setTest] = useState([])
+  const [infoList, setInfoList] = useState([])
   useEffect(() => {
-    setTest(listInfo)
+    setInfoList(info)
   }, [])
 
   return (
     <main className={styles.main}>
       <Banner />
-      {list.map((info, name) => (
-        <ComponentCollapse key={name} info={info} />
-      ))}
+      <section className={styles.section}>
+        {infoList.map((props) => (
+          <ComponentCollapse title={props.name} content={props.info} />
+        ))}
+      </section>
     </main>
   )
 }

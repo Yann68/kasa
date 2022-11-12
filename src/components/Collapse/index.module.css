@@ -1,7 +1,3 @@
-.article{
-    padding: 0 10%;
-}
-
 .header {
     margin-bottom: 30px;
     height: 50px;
@@ -38,4 +34,9 @@
 
 .button:hover {
     scale: 1.2;
+}
+
+.content {
+    padding-top: 15px;
+    padding-bottom: 30px;
 }

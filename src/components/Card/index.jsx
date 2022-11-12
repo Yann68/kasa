@@ -3,17 +3,17 @@ import { useNavigate } from 'react-router-dom'
 import styles from './index.module.css'
 
 // Fonction de la carte
-function Card({ propsCard }) {
+function Card({ props }) {
   // Variable et fonction pour navigué vers une route définie
   const navigate = useNavigate()
   function handleClick() {
-    navigate(`/logement/${propsCard.id}`)
+    navigate(`/logement/${props.id}`)
   }
   // Utilisation de la fonction handleClick sur la carte
   return (
     <div onClick={handleClick} className={styles.card}>
-      <img className={styles.image} src={propsCard.cover} alt="logement" />
-      <p className={styles.titleCard}>{propsCard.title}</p>
+      <img className={styles.image} src={props.cover} alt="logement" />
+      <p className={styles.titleCard}>{props.title}</p>
     </div>
   )
 }

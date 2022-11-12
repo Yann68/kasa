@@ -1,6 +1,6 @@
 import styles from './index.module.css'
 import { useEffect, useState } from 'react'
-import housing from '../../list/listHousing.json'
+import housing from '../../models/housing.json'
 import Card from '../../components/Card'
 import Banner from '../../components/Banner'
 
@@ -13,10 +13,10 @@ function Home() {
 
   return (
     <main className={styles.main}>
-      <Banner  />
+      <Banner />
       <section className={styles.section}>
-        {list.map((props, id) => (
-          <Card key={id} propsCard={props} />
+        {list.map((card, id) => (
+          <Card key={id} props={card} />
         ))}
       </section>
     </main>

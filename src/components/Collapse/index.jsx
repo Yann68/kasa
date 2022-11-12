@@ -3,17 +3,18 @@ import styles from './index.module.css'
 import { useState } from 'react'
 import logoClose from '../../assets/close.png'
 import logoOpen from '../../assets/open.png'
+import { useRef } from 'react'
 
 // Fonction du collapse
-function ComponentCollapse({ info }) {
+function ComponentCollapse(props) {
   // Variable pour indiqué l'etat par default
   const [isOpen, setIsOpen] = useState(false)
-  // const location = useLocation()
+  const content = useRef(null)
 
   return (
-    <article className={styles.article}>
+    <article>
       <header className={styles.header}>
-        <h1 name={test} className={styles.title}>{info.name}</h1>
+        <h1 className={styles.title}> {props.title} </h1>
         <img
           onClick={() => {
             setIsOpen(!isOpen)
@@ -25,9 +26,11 @@ function ComponentCollapse({ info }) {
       </header>
       <div
         style={!isOpen ? { overflow: 'hidden', height: 0 } : null}
-        className={isOpen && styles.collapseOpen}
+        className={isOpen ? styles.collapseOpen : undefined}
       >
-        <p>{info.info}</p>
+        <div className={styles.content} ref={content}>
+          {props.content}
+        </div>
       </div>
     </article>
   )

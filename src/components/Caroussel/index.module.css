@@ -1,0 +1,24 @@
+
+.caroussel{
+    border-radius: 25px;
+    height: 415px;
+}
+
+.carousselImg {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+   
+.button{
+width: 47px;
+height: 79px;
+cursor: pointer;
+margin: 23px;
+}
