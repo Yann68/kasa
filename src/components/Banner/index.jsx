@@ -15,7 +15,9 @@ function Banner() {
       className={styles.backgroundImage}
       style={{
         backgroundImage:
-          location.pathname === '/' ? `url(${imageHome})` : `url(${imageAbout})`,
+          location.pathname === '/'
+            ? `url(${imageHome})`
+            : `url(${imageAbout})`,
       }}
     >
       {location.pathname === '/' ? (

@@ -6,12 +6,10 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <Link to="/">
-      <img src={LOGO} alt="logo kasa" className={styles.logo} />
+        <img src={LOGO} alt="logo kasa" className={styles.logo} />
       </Link>
       <p className={styles.copyright}>© 2020 Kasa. All rights reserved</p>
     </footer>
   )
 }
 export default Footer
-
-

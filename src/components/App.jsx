@@ -5,10 +5,12 @@ import About from '../pages/About'
 import Error from '../pages/Error'
 import Home from '../pages/Home'
 import Logement from '../pages/Logement'
+import ScrollToTop from './ScrollToTop'
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />

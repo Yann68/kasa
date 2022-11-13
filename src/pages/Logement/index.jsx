@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Caroussel from '../../components/Caroussel'
 import ComponentCollapse from '../../components/Collapse'
+import Rating from '../../components/Rating'
 import Tag from '../../components/Tag'
 import housing from '../../models/housing.json'
 import styles from './index.module.css'
@@ -20,7 +21,7 @@ function Logement() {
         .filter((e) => e.id === id)
         .map((props, id) => (
           <main key={id}>
-            <Caroussel props={props} />
+            <Caroussel image={props} />
             <section>
               <div className={styles.info}>
                 <div className={styles.location}>
@@ -50,6 +51,7 @@ function Logement() {
                   </ul>
                 }
               />
+              <Rating key={id} rating={props} />
             </section>
             <section className={styles.collapse}>
               <div className={styles.contentCollapse}>

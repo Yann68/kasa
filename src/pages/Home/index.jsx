@@ -5,7 +5,6 @@ import Card from '../../components/Card'
 import Banner from '../../components/Banner'
 
 function Home() {
-  
   const [list, setList] = useState([])
   useEffect(() => {
     setList(housing)
@@ -16,7 +15,7 @@ function Home() {
       <Banner />
       <section className={styles.section}>
         {list.map((card, id) => (
-          <Card key={id} props={card} />
+          <Card key={id} card={card} />
         ))}
       </section>
     </main>

@@ -1,5 +1,5 @@
 main{
-    margin: 0 100px;
+    margin: 20px 100px 0 100px;
 }
 
 .contentCollapse{
@@ -37,25 +37,35 @@ li{
     background-color: #FF6060;
 }
 
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
 .rating ul {
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
 }
 
 .location{
     color: #FF6060;
+    
 }
 
 .location h2{
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
-    margin-bottom: 0;
+    margin: 0;
+    top: 0;
 }
 
 p {
@@ -69,14 +79,15 @@ p {
 }
 
 .profil {
-    margin-top: 20px;
     display: flex;
     align-items: center;
     text-align: right;
+    margin-bottom: 30px;
 }
 
 .profil p{
-    max-width: 90px;
+    margin: 0;
+    width: min-content;
     color: #FF6060;
 }
 

@@ -3,18 +3,18 @@ import { useNavigate } from 'react-router-dom'
 import styles from './index.module.css'
 
 // Fonction de la carte
-function Card({ props }) {
+function Card({ card }) {
   // Variable et fonction pour navigué vers une route définie
   const navigate = useNavigate()
   return (
     <div
       onClick={() => {
-        navigate(`/logement/${props.id}`)
+        navigate(`/logement/${card.id}`)
       }}
       className={styles.card}
     >
-      <img className={styles.image} src={props.cover} alt="carte du logement" />
-      <p className={styles.titleCard}>{props.title}</p>
+      <img className={styles.image} src={card.cover} alt="carte du logement" />
+      <p className={styles.titleCard}>{card.title}</p>
     </div>
   )
 }
