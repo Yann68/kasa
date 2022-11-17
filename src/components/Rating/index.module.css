@@ -1,0 +1,11 @@
+.stars {
+  display: flex;
+}
+
+@media screen and (max-width: 729px) {
+  .stars img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+}

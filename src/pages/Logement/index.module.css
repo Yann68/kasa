@@ -1,99 +1,165 @@
-main{
-    margin: 20px 100px 0 100px;
+main {
+  margin: 20px 100px 0 100px;
+  position: relative;
+  z-index: 0;
 }
 
-.contentCollapse{
-    width: 47%;
+ul {
+  padding: 0;
 }
 
-.collapse {
-    display: flex;
-    justify-content: space-between;
+.listEquipment {
+  margin: 0;
 }
 
-ul{
-    padding: 0;
+li {
+  list-style: none;
 }
 
-.listEquipment{
-    margin: 0;
-}
-
-li{
-    list-style: none;
-}
-
-.tag{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    padding: 3px;
-    border-radius: 10px;
-    min-width: 115px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    background-color: #FF6060;
-}
-
-.rating {
-    display: flex;
-    justify-content: space-between;
-}
-
-.rating ul {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.contenairInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.location{
-    color: #FF6060;
-    
+.info h2 {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
 }
 
-.location h2{
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 51px;
-    margin: 0;
-    top: 0;
+.info p {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
 }
 
-p {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
+.info ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
 
-.location p {
-    margin: 0;
+.info li {
+  text-align: center;
+  margin-right: 10px;
+  padding: 3px 50px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  background-color: #ff6060;
 }
 
 .profil {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+.profil p {
+  margin: 0;
+  width: min-content;
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.profil img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.collapse {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.collapse article {
+  width: 47%;
+}
+
+@media screen and (max-width: 1030px) {
+  .info li {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 729px) {
+  main {
+    margin: 27px 20px 0 20px;
+  }
+
+  .contenairInfo {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .info h2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .info p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .info ul {
+    flex-wrap: nowrap;
+  }
+
+  .info li {
+    font-size: 10px;
+    line-height: 14px;
+    border-radius: 5px;
+    padding: 3px 10px 1px 10px;
+  }
+
+  .profilRating {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    text-align: right;
-    margin-bottom: 30px;
-}
+    justify-content: space-between;
+    margin-top: 16px;
+  }
 
-.profil p{
+  .profil {
     margin: 0;
-    width: min-content;
-    color: #FF6060;
-}
+  }
 
-.photo {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    margin-left: 10px;
+  .profil p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .profil img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .collapse {
+    flex-direction: column;
+  }
+
+  .collapse article {
+    width: 100%;
+  }
 }

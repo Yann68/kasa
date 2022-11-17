@@ -1,14 +1,35 @@
-.main{
-   margin: 63px 100px 0 100px;
+.main {
+  margin: 63px 100px 0 100px;
 }
 
-.section{
-    padding: 53px 40px 24px 40px;
-    margin-top: 43px;
-    margin-bottom: 30px;
-    background: #F7F7F7;
-    border-radius: 25px;
-    display: flex;
-    justify-content: space-around;
+.section {
+  padding: 53px 40px 24px 40px;
+  margin-top: 43px;
+  margin-bottom: 30px;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    margin: 16px 20px 0 20px;
+  }
+  .section {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 729px) {
+  .section {
+    padding: 0;
     flex-wrap: wrap;
+    flex-direction: row;
+    background-color: unset;
+  }
 }

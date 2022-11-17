@@ -14,8 +14,12 @@ function About() {
     <main className={styles.main}>
       <Banner />
       <section className={styles.section}>
-        {infoList.map((props, id) => (
-          <ComponentCollapse key={id} title={props.name} content={props.info} />
+        {infoList.map((collapse, id) => (
+          <ComponentCollapse
+            key={id}
+            title={collapse.name}
+            content={collapse.info}
+          />
         ))}
       </section>
     </main>

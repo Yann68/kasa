@@ -5,18 +5,20 @@ import logoRight from '../../assets/right.png'
 import logoLeft from '../../assets/left.png'
 
 // fonction du caroussel d'images
-function Caroussel({ image }) {
+function Caroussel({ images }) {
   // régle l'etat du tableau d'image a 0
   const [changeImg, setChangeImg] = useState(0)
   // régle l'état du nombre a 1
   const [numberChange, setNumberChange] = useState(1)
-  const length = image.pictures.length
+  const length = images.pictures.length
   return (
     <div className={styles.caroussel}>
-      <div
-        className={styles.carousselImg}
-        style={{ backgroundImage: `url(${image.pictures[changeImg]})` }}
-      >
+      <div className={styles.carousselImg}>
+        <img
+          className={styles.image}
+          src={images.pictures[changeImg]}
+          alt="logement"
+        />
         <img
           onClick={() => {
             // si c'est la 1ére image on retourne a la derniére sinon on recule de 1
@@ -52,3 +54,12 @@ function Caroussel({ image }) {
 }
 
 export default Caroussel
+
+// {images.pictures.map((picture, index) => (
+// <img
+// key={index}
+// className={styles.image}
+// src={picture}
+// alt="logement"
+// />
+// ))}

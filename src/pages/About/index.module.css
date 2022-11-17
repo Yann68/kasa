@@ -1,9 +1,21 @@
-.main{
-    margin: 44px 100px 0 100px;
+.main {
+  margin: 44px 100px 0 100px;
 }
 
-.section{
-    padding: 0 10%;
-    margin-bottom: 201px;
+.section {
+  padding: 0 10%;
+  margin-bottom: 201px;
+  min-height: 290px;
 }
 
+@media screen and (max-width: 729px) {
+  .main {
+    margin: 10px 20px 0 20px;
+  }
+  .section {
+    margin-top: 22px;
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: #fff;
+  }
+}
