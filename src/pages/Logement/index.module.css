@@ -96,6 +96,10 @@ li {
   width: 47%;
 }
 
+.collapse div.active {
+  padding: 0;
+}
+
 @media screen and (max-width: 1030px) {
   .info li {
     margin-bottom: 5px;

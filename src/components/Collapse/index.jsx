@@ -9,17 +9,13 @@ function ComponentCollapse({ title, content }) {
   // Variable pour indiqué l'etat par default
   const [isOpen, setIsOpen] = useState(false)
 
-  function HandleToggle() {
-    setIsOpen(!isOpen)
-  }
-
   return (
-    <article className={isOpen && styles.active}>
+    <article className={isOpen ? styles.active : undefined}>
       <header className={styles.header}>
         <h1 className={styles.title}> {title} </h1>
         <img
           onClick={() => {
-            HandleToggle()
+            setIsOpen(!isOpen)
           }}
           src={!isOpen ? logoClose : logoOpen}
           className={styles.button}

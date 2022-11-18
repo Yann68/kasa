@@ -15,6 +15,7 @@ function Card({ card }) {
     >
       <img className={styles.image} src={card.cover} alt="carte du logement" />
       <p className={styles.titleCard}>{card.title}</p>
+      <div className={styles.filtre}></div>
     </div>
   )
 }
