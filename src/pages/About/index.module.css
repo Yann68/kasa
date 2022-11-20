@@ -3,19 +3,32 @@
 }
 
 .section {
-  padding: 0 10%;
-  margin-bottom: 201px;
+  padding: 0 100px;
+  margin-top: 30px;
+  margin-bottom: 195px;
   min-height: 290px;
 }
 
-@media screen and (max-width: 729px) {
+.section p {
+  padding: 30px 35px 8px 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+@media screen and (max-width: 860px) {
   .main {
     margin: 10px 20px 0 20px;
   }
+
   .section {
     margin-top: 22px;
     margin-bottom: 10px;
     padding: 0;
     background-color: #fff;
+  }
+
+  .section p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 25px 2px 50px 10px;
   }
 }

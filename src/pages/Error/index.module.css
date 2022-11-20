@@ -33,7 +33,7 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 729px) {
+@media screen and (max-width: 860px) {
   .number {
     font-size: 96px;
     line-height: 137px;

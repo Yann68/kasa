@@ -1,8 +1,7 @@
 // Importation du style, des logos et des hooks
 import styles from './index.module.css'
 import { useState } from 'react'
-import logoClose from '../../assets/close.png'
-import logoOpen from '../../assets/open.png'
+import arrow from '../../assets/arrow.svg'
 
 // Fonction du collapse
 function ComponentCollapse({ title, content }) {
@@ -12,12 +11,13 @@ function ComponentCollapse({ title, content }) {
   return (
     <article className={isOpen ? styles.active : undefined}>
       <header className={styles.header}>
-        <h1 className={styles.title}> {title} </h1>
+        <h3 className={styles.title}> {title} </h3>
         <img
           onClick={() => {
             setIsOpen(!isOpen)
           }}
-          src={!isOpen ? logoClose : logoOpen}
+          style={{ transform: isOpen && 'rotateX(180deg)' }}
+          src={arrow}
           className={styles.button}
           alt="bouton pour fermé ou ouvrir l'info"
         />

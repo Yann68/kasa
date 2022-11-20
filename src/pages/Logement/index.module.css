@@ -19,7 +19,7 @@ li {
 .contenairInfo {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .info {
@@ -45,16 +45,18 @@ li {
 }
 
 .info ul {
+  height: 30px;
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 0;
   margin-top: 20px;
 }
 
 .info li {
   text-align: center;
+  width: max-content;
+  height: 25px;
   margin-right: 10px;
-  padding: 3px 50px;
+  padding: 4px 30px 0 30px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: 500;
@@ -89,36 +91,57 @@ li {
 .collapse {
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
+  margin-top: 22px;
 }
 
 .collapse article {
   width: 47%;
 }
 
-.collapse div.active {
-  padding: 0;
+.collapse header {
+  padding-right: 10px;
+  border-radius: 10px;
+  height: 52px;
 }
 
-@media screen and (max-width: 1030px) {
-  .info li {
-    margin-bottom: 5px;
-  }
+.collapse h3 {
+  font-size: 18px;
 }
 
-@media screen and (max-width: 729px) {
+.collapse img {
+  width: 28px;
+  height: 18px;
+}
+
+.collapse p {
+  font-size: 18px;
+  line-height: 25px;
+  padding: 30px 15px 50px 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.collapse ul {
+  font-size: 18px;
+  line-height: 25px;
+  padding: 30px 15px 50px 20px;
+  border-radius: 0 0 10px 10px;
+  background: #f7f7f7;
+}
+
+@media screen and (max-width: 860px) {
   main {
-    margin: 27px 20px 0 20px;
+    margin: 25px 20px 0 20px;
   }
 
   .contenairInfo {
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .info h2 {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 26px;
+    margin-bottom: 5px;
   }
 
   .info p {
@@ -127,10 +150,12 @@ li {
   }
 
   .info ul {
+    margin-top: 10px;
     flex-wrap: nowrap;
   }
 
   .info li {
+    height: 15px;
     font-size: 10px;
     line-height: 14px;
     border-radius: 5px;
@@ -142,7 +167,7 @@ li {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    margin-top: 16px;
+    margin-top: 12px;
   }
 
   .profil {
@@ -161,9 +186,40 @@ li {
 
   .collapse {
     flex-direction: column;
+    margin-top: 16px;
+    margin-bottom: 40px;
   }
 
   .collapse article {
     width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .collapse header {
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 7px 0 11px;
+  }
+
+  .collapse h3 {
+    font-size: 13px;
+  }
+
+  .collapse img {
+    width: 17px;
+  }
+
+  .collapse p {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 20px 15px 3px 10px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .collapse ul {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 20px 15px 3px 10px;
+    border-radius: 0 0 5px 5px;
   }
 }

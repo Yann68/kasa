@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import ComponentCollapse from '../../components/Collapse'
 import info from '../../models/info.json'
 import Banner from '../../components/Banner'
+import imageAbout from '../../assets/img_about.jpg'
 
 function About() {
   const [infoList, setInfoList] = useState([])
@@ -12,13 +13,13 @@ function About() {
 
   return (
     <main className={styles.main}>
-      <Banner />
+      <Banner image={imageAbout} />
       <section className={styles.section}>
         {infoList.map((collapse, id) => (
           <ComponentCollapse
             key={id}
             title={collapse.name}
-            content={collapse.info}
+            content={<p>{collapse.info}</p>}
           />
         ))}
       </section>

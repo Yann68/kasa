@@ -28,7 +28,7 @@ function Header() {
           }}
           to="/about"
         >
-          A propos
+          A Propos
         </NavLink>
       </nav>
     </header>

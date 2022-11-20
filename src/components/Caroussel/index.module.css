@@ -15,11 +15,11 @@
 
 .slider p {
   position: absolute;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 400;
   line-height: 26px;
-  bottom: 0;
-  left: 48%;
+  bottom: 10px;
+  left: 49%;
 }
 
 .image {
@@ -33,22 +33,20 @@
 
 .buttonLeft {
   position: absolute;
-  top: 35%;
-  left: 0;
-  width: 47px;
-  height: 79px;
+  top: 170px;
+  left: 8px;
+  height: 53px;
   cursor: pointer;
-  margin: 23px;
+  transform: rotate(90deg);
 }
 
 .buttonRight {
+  transform: rotate(-90deg);
   position: absolute;
-  top: 35%;
-  right: 0;
-  width: 47px;
-  height: 79px;
+  top: 170px;
+  right: 8px;
+  height: 53px;
   cursor: pointer;
-  margin: 23px;
 }
 
 .buttonLeft:active {
@@ -59,7 +57,7 @@
   scale: 0.8;
 }
 
-@media screen and (max-width: 729px) {
+@media screen and (max-width: 860px) {
   .slider {
     height: 255px;
   }
@@ -69,13 +67,15 @@
   }
 
   .buttonLeft {
-    width: 12px;
-    height: 20px;
+    top: 48%;
+    left: 0;
+    height: 14px;
   }
 
   .buttonRight {
-    width: 12px;
-    height: 20px;
+    top: 48%;
+    right: 0;
+    height: 14px;
   }
 
   .slider p {

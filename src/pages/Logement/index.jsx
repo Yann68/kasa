@@ -39,8 +39,9 @@ function Logement() {
 
             <section className={styles.collapse}>
               <ComponentCollapse
+                className={styles.content}
                 title="Description"
-                content={props.description}
+                content={<p>{props.description}</p>}
               />
               <ComponentCollapse
                 title="Equipements"
