@@ -2,6 +2,14 @@
   margin: 63px 100px 63px 100px;
 }
 
+.banner {
+  height: 223px;
+  background-image: url('../../assets/img_home.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+}
+
 .section {
   padding: 52px 20px 0px 20px;
   margin-top: 43px;
@@ -14,10 +22,17 @@
 
 @media screen and (max-width: 860px) {
   .main {
-    margin: 10px 20px 10px 20px;
+    margin: 10px 19px 10px 19px;
+  }
+
+  .banner {
+    height: 113px;
+    background-image: url('../../assets/img_home_mobil.jpg');
+    border-radius: 10px;
   }
 
   .section {
+    margin-top: 21px;
     padding: 0;
     flex-wrap: wrap;
     flex-direction: row;

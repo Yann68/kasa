@@ -6,12 +6,12 @@ function Error() {
     <div className={styled.container}>
       <h1 className={styled.number}>404</h1>
       <p className={styled.text}>
-        Oups! La page que vous demandez n'existe pas.
+        Oups! La page que <br /> vous demandez n'existe pas.
       </p>
       <Link to="/" className={styled.link}>
         Retourner sur la page d'accueil
       </Link>
-      </div>
+    </div>
   )
 }
 export default Error

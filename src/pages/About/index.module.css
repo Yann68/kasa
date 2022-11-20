@@ -1,12 +1,19 @@
 .main {
-  margin: 44px 100px 0 100px;
+  margin: 44px 100px 195px 100px;
+}
+
+.banner {
+  height: 223px;
+  background-image: url('../../assets/img_about.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
 }
 
 .section {
   padding: 0 100px;
   margin-top: 30px;
-  margin-bottom: 195px;
-  min-height: 290px;
 }
 
 .section p {
@@ -16,19 +23,24 @@
 
 @media screen and (max-width: 860px) {
   .main {
-    margin: 10px 20px 0 20px;
+    margin: 12px 19px 168px 19px;
+  }
+
+  .banner {
+    height: 225px;
+    background-image: url('../../assets/img_about_mobil.jpg');
+    border-radius: 10px;
   }
 
   .section {
-    margin-top: 22px;
-    margin-bottom: 10px;
+    margin-top: 20px;
     padding: 0;
     background-color: #fff;
   }
 
   .section p {
     font-size: 12px;
-    line-height: 20px;
-    padding: 25px 2px 50px 10px;
+    line-height: 18px;
+    padding: 24px 2px 47px 10px;
   }
 }

@@ -49,4 +49,9 @@
   .card {
     margin-bottom: 20px;
   }
+
+  .titleCard {
+    top: 66%;
+    width: 80%;
+  }
 }

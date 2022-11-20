@@ -45,7 +45,6 @@ li {
 }
 
 .info ul {
-  height: 30px;
   display: flex;
   margin-bottom: 0;
   margin-top: 20px;
@@ -151,10 +150,11 @@ li {
 
   .info ul {
     margin-top: 10px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .info li {
+    margin-bottom: 5px;
     height: 15px;
     font-size: 10px;
     line-height: 14px;
@@ -209,13 +209,7 @@ li {
     width: 17px;
   }
 
-  .collapse p {
-    font-size: 15px;
-    line-height: 18px;
-    padding: 20px 15px 3px 10px;
-    border-radius: 0 0 5px 5px;
-  }
-
+  .collapse p,
   .collapse ul {
     font-size: 13px;
     line-height: 18px;
