@@ -60,15 +60,15 @@
   .buttonLeft,
   .buttonRight {
     top: 48%;
-    height: 14px;
+    height: 13px;
   }
 
   .buttonLeft {
-    left: 0;
+    left: 1px;
   }
 
   .buttonRight {
-    right: 0;
+    right: 1px;
   }
 
   .slider p {

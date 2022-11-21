@@ -15,7 +15,7 @@ function About() {
       <div className={styles.banner}>
         <Banner />
       </div>
-      <section className={styles.section}>
+      <section className={styles.collapse}>
         {infoList.map((collapse, id) => (
           <ComponentCollapse
             key={id}

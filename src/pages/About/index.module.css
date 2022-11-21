@@ -2,6 +2,7 @@
   margin: 44px 100px 195px 100px;
 }
 
+/* partie banner */
 .banner {
   height: 223px;
   background-image: url('../../assets/img_about.jpg');
@@ -11,14 +12,29 @@
   border-radius: 25px;
 }
 
-.section {
+/* section collapse */
+.collapse {
   padding: 0 100px;
   margin-top: 30px;
 }
 
-.section p {
+.collapse article {
+  margin-bottom: 30px;
+}
+
+.collapse h3 {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 34px;
+}
+
+.collapse p {
+  text-align: left;
+  color: #ff6060;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
   padding: 30px 35px 8px 20px;
-  border-radius: 0 0 5px 5px;
 }
 
 @media screen and (max-width: 860px) {
@@ -27,20 +43,29 @@
   }
 
   .banner {
-    height: 225px;
+    height: 223px;
     background-image: url('../../assets/img_about_mobil.jpg');
     border-radius: 10px;
   }
 
-  .section {
-    margin-top: 20px;
+  .collapse {
+    margin-top: 19px;
     padding: 0;
     background-color: #fff;
   }
 
-  .section p {
+  .collapse article {
+    margin-bottom: 20px;
+  }
+
+  .collapse h3 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .collapse p {
     font-size: 12px;
-    line-height: 18px;
-    padding: 24px 2px 47px 10px;
+    line-height: 17px;
+    padding: 22px 2px 53px 10px;
   }
 }
