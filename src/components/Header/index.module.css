@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.header nav {
+  margin: 0;
+}
+
 .link {
   color: #ff6060;
   font-size: 23px;
@@ -14,17 +18,13 @@
   margin-left: 57px;
 }
 
-.container {
-  margin: 0;
-}
-
 @media screen and (max-width: 860px) {
   .header {
     margin: 17px 20px 0 20px;
     height: 54px;
   }
 
-  .logo {
+  .header img {
     height: 46px;
   }
 

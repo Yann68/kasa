@@ -8,13 +8,13 @@ function Card({ card }) {
   const navigate = useNavigate()
   return (
     <div
+      className={styles.card}
       onClick={() => {
         navigate(`/logement/${card.id}`)
       }}
-      className={styles.card}
     >
-      <img className={styles.image} src={card.cover} alt="carte du logement" />
-      <p className={styles.titleCard}>{card.title}</p>
+      <img src={card.cover} alt="carte du logement" />
+      <p>{card.title}</p>
       <div className={styles.filtre}></div>
     </div>
   )

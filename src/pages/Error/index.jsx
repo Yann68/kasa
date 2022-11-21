@@ -4,8 +4,8 @@ import styled from './index.module.css'
 function Error() {
   return (
     <div className={styled.container}>
-      <h1 className={styled.number}>404</h1>
-      <p className={styled.text}>
+      <h1>404</h1>
+      <p>
         Oups! La page que <br /> vous demandez n'existe pas.
       </p>
       <Link to="/" className={styled.link}>

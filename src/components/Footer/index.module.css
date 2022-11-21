@@ -4,13 +4,13 @@
   text-align: center;
 }
 
-.logo {
+.footer img {
   width: 122px;
   height: 39px;
   margin-top: 66px;
 }
 
-.copyright {
+.footer p {
   font-size: 24px;
   font-weight: 500;
   line-height: 34px;
@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 860px) {
-  .copyright {
+  .footer p {
     font-size: 12px;
     line-height: 17px;
     margin-top: 25px;

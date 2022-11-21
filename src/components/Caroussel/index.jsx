@@ -25,11 +25,7 @@ function Caroussel({ images }) {
   return (
     <div className={styles.slider}>
       <div className={styles.sliderContent}>
-        <img
-          className={styles.image}
-          src={images.pictures[changeImg]}
-          alt="logement"
-        />
+        <img src={images.pictures[changeImg]} alt="logement" />
       </div>
       <img
         onClick={() => {

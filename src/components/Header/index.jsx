@@ -6,10 +6,10 @@ function Header() {
   return (
     <header className={styles.header}>
       <Link to="/">
-        <img src={LOGO} alt="logo Kasa" className={styles.logo} />
+        <img src={LOGO} alt="logo Kasa" />
       </Link>
 
-      <nav className={styles.container}>
+      <nav>
         <NavLink
           className={styles.link}
           style={({ isActive }) => {

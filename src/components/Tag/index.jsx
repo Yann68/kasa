@@ -1,14 +1,8 @@
-// import { useRef } from 'react'
-//
-function Tag({ tags }) {
+import styles from './index.module.css'
+
+function Tag({ content }) {
   // const content = useRef(null)
-  return (
-    <ul>
-      {tags.tags.map((tag, id) => (
-        <li key={id}>{tag}</li>
-      ))}
-    </ul>
-  )
+  return <div className={styles.tag}>{content}</div>
 }
 
 export default Tag

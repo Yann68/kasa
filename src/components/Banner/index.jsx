@@ -5,8 +5,8 @@ import styles from './index.module.css'
 function Banner({ title }) {
   return (
     <div className={styles.banner}>
-      <h1 className={styles.title}>{title}</h1>
-      <div className={styles.bannerFiltre}></div>
+      <h1>{title}</h1>
+      <div className={styles.filtre}></div>
     </div>
   )
 }

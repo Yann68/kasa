@@ -3,14 +3,31 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
   margin-bottom: 48px;
   cursor: pointer;
+  position: relative;
+}
+
+.card img {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+}
+
+.card p {
+  z-index: 3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  left: 20px;
+  top: 73%;
+  width: 70%;
+  position: absolute;
 }
 
 .filtre {
-  position: absolute;
-  border-radius: 10px;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -19,38 +36,21 @@
     rgba(255, 255, 255, 0) 0%,
     rgba(0, 0, 0, 0.5) 100%
   );
-}
-
-.image {
-  position: relative;
-  width: 340px;
-  height: 340px;
   border-radius: 10px;
-  object-fit: cover;
-}
-
-.titleCard {
-  z-index: 3;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
   position: absolute;
-  left: 20px;
-  top: 73%;
-  width: 70%;
 }
 
 @media screen and (max-width: 860px) {
-  .image {
-    width: 335px;
-    height: 255px;
-  }
-
   .card {
     margin-bottom: 20px;
   }
 
-  .titleCard {
+  .card img {
+    width: 335px;
+    height: 255px;
+  }
+
+  .card p {
     top: 66%;
     width: 80%;
   }

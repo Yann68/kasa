@@ -26,7 +26,16 @@ function Logement() {
               <div className={styles.info}>
                 <h2>{props.title}</h2>
                 <p>{props.location}</p>
-                <Tag key={id} tags={props} />
+                <Tag
+                  key={id}
+                  content={
+                    <ul>
+                      {props.tags.map((tag, id) => (
+                        <li key={id}>{tag}</li>
+                      ))}
+                    </ul>
+                  }
+                />
               </div>
               <div className={styles.profilRating}>
                 <div className={styles.profil}>

@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.number {
+.container h1 {
   margin: 0;
   font-weight: 700;
   font-size: 288px;
@@ -14,7 +14,7 @@
   color: #ff6060;
 }
 
-.text {
+.container p {
   margin: 0;
   font-weight: 500;
   font-size: 36px;
@@ -37,13 +37,13 @@ br {
 }
 
 @media screen and (max-width: 860px) {
-  .number {
+  .container h1 {
     font-size: 96px;
     line-height: 137px;
     margin-top: 174px;
   }
 
-  .text {
+  .container p {
     margin-top: -10px;
     font-weight: 500;
     font-size: 18px;

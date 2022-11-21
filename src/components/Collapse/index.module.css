@@ -1,8 +1,8 @@
-article {
+.collapse {
   margin-bottom: 30px;
 }
 
-.header {
+.collapse header {
   position: relative;
   z-index: 2;
   height: 47px;
@@ -14,10 +14,17 @@ article {
   background-color: #ff6060;
 }
 
-.title {
+.collapse h3 {
   font-weight: 500;
   font-size: 23px;
   line-height: 34px;
+}
+
+.collapse img {
+  cursor: pointer;
+  width: 26px;
+  height: 16px;
+  transition: all 0.2s;
 }
 
 .content {
@@ -36,38 +43,30 @@ article {
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
+  background: #f7f7f7;
 }
 
 .active .content p {
   margin: 0;
-  background: #f7f7f7;
-  transform-origin: top;
-}
-
-.button {
-  cursor: pointer;
-  width: 26px;
-  height: 16px;
-  transition: all 0.2s;
 }
 
 @media screen and (max-width: 860px) {
-  .header {
+  .collapse {
+    margin-bottom: 19px;
+  }
+
+  .collapse header {
     height: 30px;
     border-radius: 5px;
     padding: 0 7px 0 11px;
   }
 
-  .title {
+  .collapse h3 {
     font-size: 13px;
     line-height: 20px;
   }
 
-  .button {
+  .collapse img {
     width: 17px;
-  }
-
-  article {
-    margin-bottom: 19px;
   }
 }

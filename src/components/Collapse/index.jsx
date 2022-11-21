@@ -9,16 +9,17 @@ function ComponentCollapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <article className={isOpen ? styles.active : undefined}>
-      <header className={styles.header}>
-        <h3 className={styles.title}> {title} </h3>
+    <article
+      className={`${styles.collapse} ${isOpen ? styles.active : undefined}`}
+    >
+      <header>
+        <h3> {title} </h3>
         <img
           onClick={() => {
             setIsOpen(!isOpen)
           }}
           style={{ transform: isOpen && 'rotateX(180deg)' }}
           src={arrow}
-          className={styles.button}
           alt="bouton pour fermé ou ouvrir l'info"
         />
       </header>
