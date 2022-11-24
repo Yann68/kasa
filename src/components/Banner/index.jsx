@@ -2,7 +2,7 @@
 import styles from './index.module.css'
 
 // Fonction de la bannière
-function Banner({ title }) {
+function Banner({ title, image }) {
   return (
     <div className={styles.banner}>
       <h1>{title}</h1>

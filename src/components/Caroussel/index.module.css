@@ -1,17 +1,21 @@
 .slider {
   height: 415px;
+  width: 100%;
   position: relative;
+  overflow: hidden;
+  border-radius: 25px;
 }
 
 .sliderContent {
+  display: flex;
   height: 100%;
+  width: 100%;
+  transition: all 1s ease;
 }
 
 .sliderContent img {
   height: 100%;
-  width: 100%;
-  object-position: center;
-  border-radius: 25px;
+  min-width: 100%;
   object-position: center;
   object-fit: cover;
 }
@@ -25,26 +29,26 @@
   left: 49%;
 }
 
-.buttonLeft,
-.buttonRight {
+.arrowLeft,
+.arrowRight {
   position: absolute;
   top: 170px;
   height: 53px;
   cursor: pointer;
 }
 
-.buttonLeft {
+.arrowLeft {
   left: 8px;
   transform: rotate(90deg);
 }
 
-.buttonRight {
+.arrowRight {
   right: 8px;
   transform: rotate(-90deg);
 }
 
-.buttonLeft:active,
-.buttonRight:active {
+.arrowLeft:active,
+.arrowRight:active {
   scale: 0.8;
 }
 
@@ -57,17 +61,17 @@
     border-radius: 10px;
   }
 
-  .buttonLeft,
-  .buttonRight {
+  .arrowLeft,
+  .arrowRight {
     top: 48%;
     height: 13px;
   }
 
-  .buttonLeft {
+  .arrowLeft {
     left: 1px;
   }
 
-  .buttonRight {
+  .arrowRight {
     right: 1px;
   }
 
