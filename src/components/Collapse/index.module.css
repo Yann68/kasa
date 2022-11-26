@@ -36,7 +36,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 680px) {
   .collapse header {
     height: 30px;
     border-radius: 5px;

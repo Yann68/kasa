@@ -7,7 +7,7 @@ import Home from './pages/Home'
 import Logement from './pages/Logement'
 import ScrollToTop from './components/ScrollToTop'
 
-// fonction pour appelé les routes
+// fonction pour appelé les routes et composants
 function App() {
   return (
     <>
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/logement/:id" element={<Logement />} />
+        <Route path="/logement/:id" exact element={<Logement />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

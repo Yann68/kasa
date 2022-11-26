@@ -10,6 +10,7 @@ function Home() {
 
   useEffect(() => {
     setList(housing)
+    document.title = 'Kasa - Accueil'
   }, [])
 
   return (

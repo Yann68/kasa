@@ -27,7 +27,7 @@
   height: 100%;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 680px) {
   .banner h1 {
     margin: 0;
     font-size: 24px;

@@ -52,7 +52,7 @@
   scale: 0.8;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 680px) {
   .slider {
     height: 255px;
   }

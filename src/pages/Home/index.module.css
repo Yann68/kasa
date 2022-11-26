@@ -20,22 +20,32 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 860px) {
-  .main {
-    margin: 10px 19px 10px 19px;
-  }
-
+@media screen and (max-width: 680px) {
   .banner {
     height: 113px;
     background-image: url('../../assets/img_home_mobil.jpg');
     border-radius: 10px;
   }
+  .section {
+    background-color: unset;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .main {
+    margin: 10px 19px 10px 19px;
+    padding: 0;
+  }
 
   .section {
     margin-top: 21px;
-    padding: 0;
+
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: unset;
+  }
+}
+@media screen and (max-width: 680px) {
+  .section {
+    padding: 0;
   }
 }

@@ -9,6 +9,7 @@ function About() {
   const [infoList, setInfoList] = useState([])
   useEffect(() => {
     setInfoList(info)
+    document.title = 'Kasa - A propos'
   }, [])
 
   return (
