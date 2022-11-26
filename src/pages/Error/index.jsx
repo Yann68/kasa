@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import styled from './index.module.css'
 
+// fonction de la page d'erreur
 function Error() {
   return (
     <div className={styled.container}>

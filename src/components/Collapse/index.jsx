@@ -10,6 +10,7 @@ function ComponentCollapse({ title, content }) {
 
   return (
     <article
+      // si isOpen on renvois la classe active
       className={`${styles.collapse} ${isOpen ? styles.active : undefined}`}
     >
       <header>
@@ -18,6 +19,7 @@ function ComponentCollapse({ title, content }) {
           onClick={() => {
             setIsOpen(!isOpen)
           }}
+          // a chaque clic le logo fait une rotation
           style={{ transform: isOpen && 'rotateX(180deg)' }}
           src={arrow}
           alt="bouton pour fermé ou ouvrir l'info"
@@ -28,5 +30,3 @@ function ComponentCollapse({ title, content }) {
   )
 }
 export default ComponentCollapse
-
-// isOpen ? styles.collapseOpen :

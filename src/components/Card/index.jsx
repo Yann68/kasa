@@ -6,6 +6,7 @@ import styles from './index.module.css'
 function Card({ card }) {
   // Variable et fonction pour navigué vers une route définie
   const navigate = useNavigate()
+
   return (
     <div
       className={styles.card}

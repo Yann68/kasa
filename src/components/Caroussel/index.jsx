@@ -53,14 +53,3 @@ function Caroussel({ images }) {
 }
 
 export default Caroussel
-
-// {images.pictures.map((picture, index) => (
-/* <img */
-// key={index}
-// className={styles.image}
-// src={picture}
-// alt="logement"
-/* /> */
-// ))}
-
-/* <img src={images.pictures[changeImg]} alt="logement" /> */

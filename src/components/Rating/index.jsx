@@ -6,7 +6,7 @@ function Rating({ rating }) {
   // tableau qui contient les 5 étoiles
   const stars = [1, 2, 3, 4, 5]
   return (
-    // boucle du tableau pour affiché la bonne couleur d'étoile en fonction du nombre de note
+    // boucle du tableau stars pour affiché la bonne couleur aux étoiles en fonction du nombre de note
     <div className={styles.stars}>
       {stars.map((star, id) =>
         rating.rating >= star ? (

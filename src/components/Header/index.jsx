@@ -12,6 +12,7 @@ function Header() {
       <nav>
         <NavLink
           className={styles.link}
+          // si la page est active on souligne le mot du lien
           style={({ isActive }) => {
             return { textDecoration: isActive && 'underline' }
           }}
@@ -23,6 +24,7 @@ function Header() {
 
         <NavLink
           className={styles.link}
+          // si la page est active on souligne le mot du lien
           style={({ isActive }) => {
             return { textDecoration: isActive && 'underline' }
           }}

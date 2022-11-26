@@ -4,6 +4,7 @@ import ComponentCollapse from '../../components/Collapse'
 import info from '../../models/info.json'
 import Banner from '../../components/Banner'
 
+// fonction de la page a propos
 function About() {
   const [infoList, setInfoList] = useState([])
   useEffect(() => {
