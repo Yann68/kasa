@@ -1,5 +1,6 @@
+import { render } from '@testing-library/react'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Caroussel from '../../components/Caroussel'
 import ComponentCollapse from '../../components/Collapse'
 import Rating from '../../components/Rating'
@@ -9,21 +10,23 @@ import styles from './index.module.css'
 
 // fonction de la page logement
 function Logement() {
+  const navigate = useNavigate()
   const [list, setList] = useState([])
   const { id } = useParams()
 
-  useEffect(() => {
-    setList(housing)
-    document.title = `Kasa - Logement `
-  }, [])
-
-  const product = list.find((e) => {
+  const product = housing.find((e) => {
     return e.id === id
   })
 
+  useEffect(() => {
+    setList(list)
+    document.title = `Kasa - Logement `
+    if (!product) navigate('/error')
+  }, [product, navigate, list])
+
   // si les id sont exacts on affiche le produit sinon on renvois sur la page d'erreur
-  return (
-    product && (
+  if (product) {
+    return (
       <main>
         <Caroussel images={product} />
         <section className={styles.contenairInfo}>
@@ -67,6 +70,6 @@ function Logement() {
         </section>
       </main>
     )
-  )
+  }
 }
 export default Logement
