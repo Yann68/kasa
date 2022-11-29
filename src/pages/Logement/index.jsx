@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react'
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Caroussel from '../../components/Caroussel'
